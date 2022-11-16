@@ -11,7 +11,8 @@ import data from './components/data.json'
 // PROPS: App deberá pasar por props lo necesario a sus componenetes internos para que manipulen o lean su estado.
 
 function App() {
-  const [totalLike, setTotalLike] = useState(0);
+  const [likes] = data;
+  const [totalLike, setTotalLike] = useState(likes.likes);
   {/**TODO ENCAPSULAR EL VALOR DE LOS LIKES EN UN ESTADO ES COMO SE DEBE HACER.
     SIN EMBARGO, LO QUE TENÍAS QUE HACER ERA SUMAR TODOS LOS LIKES, Y ESE RESULTADO ERA EL QUE DEBÍAS GUARDAR EN EL ESTADO.
  */ }
